@@ -1,0 +1,418 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 16bc6ef7-dfa2-4e86-beaa-9e6da83eb8f2@24561.wjb-2
+version: v6.2.0 https://github.com/travis-ci/worker/tree/5e5476e01646095f48eec13196fdb3faf8f5cbf7
+instance: cff5d373-9aca-449a-afd8-3047561c22f5 travis-ci-macos-10.13-xcode9.4.1-1529955246 (via amqp)
+startup: 1m0.988111256s
+travis_fold:end:worker_info[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: csharp
+Build id: 497424371
+Job id: 497424374
+Runtime kernel version: 17.4.0
+travis-build version: ecb8262c9
+[34m[1mBuild image provisioning date and time[0m
+Mon Jun 25 21:55:14 GMT 2018
+[34m[1mOperating System Details[0m
+ProductName:	Mac OS X
+ProductVersion:	10.13.3
+BuildVersion:	17D102
+[34m[1mGit version[0m
+git version 2.18.0
+[34m[1mbash version[0m
+GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin17)
+Copyright (C) 2007 Free Software Foundation, Inc.
+[34m[1mGCC version[0m
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+[34m[1mLLVM version[0m
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.5
+ruby-2.4.3
+[34m[1mPre-installed Node.js versions[0m
+v4.9.1
+v5.12.0
+v6.14.3
+v8.11.3
+[34m[1mmvn -version[0m
+Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T18:33:14Z)
+Maven home: /usr/local/Cellar/maven/3.5.4/libexec
+Java version: 10.0.1, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home
+Default locale: en_US, platform encoding: UTF-8
+OS name: "mac os x", version: "10.13.3", arch: "x86_64", family: "mac"
+travis_fold:end:system_info[0K
+Uninstalled oclint to prevent interference with other packages.
+If you need oclint, you must explicitly install it.
+
+
+[31;1mC# support for Travis-CI is community maintained.[0m
+[31;1mPlease open any issues at https://github.com/travis-ci/travis-ci/issues/new and cc @joshua-anderson @akoeplinger @nterry[0m
+travis_fold:start:mono-install[0K[33;1mInstalling Mono[0m
+travis_time:start:05a6337b[0K$ wget --retry-connrefused --waitretry=1 -O /tmp/mdk.pkg http://download.mono-project.com/archive/mdk-latest.pkg
+--2019-02-23 10:23:10--  http://download.mono-project.com/archive/mdk-latest.pkg
+Resolving download.mono-project.com (download.mono-project.com)... 72.21.81.200
+Connecting to download.mono-project.com (download.mono-project.com)|72.21.81.200|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 325695336 (311M) [application/octet-stream]
+Saving to: ‘/tmp/mdk.pkg’
+
+/tmp/mdk.pkg          0%[                    ]       0  --.-KB/s               /tmp/mdk.pkg          8%[>                   ]  25.07M   124MB/s               /tmp/mdk.pkg         17%[==>                 ]  53.53M   133MB/s               /tmp/mdk.pkg         26%[====>               ]  81.02M   135MB/s               /tmp/mdk.pkg         35%[======>             ] 109.61M   137MB/s               /tmp/mdk.pkg         45%[========>           ] 140.55M   140MB/s               /tmp/mdk.pkg         56%[==========>         ] 173.96M   145MB/s               /tmp/mdk.pkg         65%[============>       ] 204.45M   146MB/s               /tmp/mdk.pkg         76%[==============>     ] 236.91M   148MB/s               /tmp/mdk.pkg         85%[================>   ] 264.32M   147MB/s               /tmp/mdk.pkg         95%[==================> ] 297.53M   149MB/s               /tmp/mdk.pkg        100%[===================>] 310.61M   149MB/s    in 2.1s    
+
+2019-02-23 10:23:13 (149 MB/s) - ‘/tmp/mdk.pkg’ saved [325695336/325695336]
+
+travis_time:end:05a6337b:start=1550917390980267000,finish=1550917393099038000,duration=2118771000[0Ktravis_time:start:0a83e514[0Kinstaller: Package name is Mono Framework
+installer: Installing at base path /
+installer:PHASE:Preparing for installation…
+installer:PHASE:Preparing the disk…
+installer:PHASE:Preparing Mono Framework…
+installer:PHASE:Waiting for other installations to complete…
+installer:PHASE:Configuring the installation…
+installer:STATUS:
+installer:%3.928964
+installer:PHASE:Writing files…
+installer:%4.678614
+installer:PHASE:Writing files…
+installer:%6.186542
+installer:PHASE:Writing files…
+installer:%8.448434
+installer:PHASE:Writing files…
+installer:%11.464290
+installer:PHASE:Writing files…
+installer:%13.726182
+installer:PHASE:Writing files…
+installer:%15.988074
+installer:PHASE:Writing files…
+installer:%18.249966
+installer:PHASE:Writing files…
+installer:%19.757893
+installer:PHASE:Writing files…
+installer:%20.511857
+installer:PHASE:Writing files…
+installer:%22.773749
+installer:PHASE:Writing files…
+installer:%25.035641
+installer:PHASE:Writing files…
+installer:%27.297533
+installer:PHASE:Writing files…
+installer:%29.559425
+installer:PHASE:Writing files…
+installer:%31.821317
+installer:PHASE:Writing files…
+installer:%34.837173
+installer:PHASE:Writing files…
+installer:%37.099065
+installer:PHASE:Writing files…
+installer:%39.360957
+installer:PHASE:Writing files…
+installer:%40.868885
+installer:PHASE:Writing files…
+installer:%43.130777
+installer:PHASE:Writing files…
+installer:%46.146632
+installer:PHASE:Writing files…
+installer:%49.162488
+installer:PHASE:Writing files…
+installer:%51.424380
+installer:PHASE:Writing files…
+installer:%53.686272
+installer:PHASE:Writing files…
+installer:%55.194200
+installer:PHASE:Writing files…
+installer:%56.702128
+installer:PHASE:Writing files…
+installer:%57.456092
+installer:PHASE:Writing files…
+installer:%58.210056
+installer:PHASE:Writing files…
+installer:%59.717984
+installer:PHASE:Writing files…
+installer:%61.979876
+installer:PHASE:Writing files…
+installer:%64.241768
+installer:PHASE:Writing files…
+installer:%65.749696
+installer:PHASE:Writing files…
+installer:%67.257624
+installer:PHASE:Writing files…
+installer:%68.765552
+installer:PHASE:Writing files…
+installer:%70.273480
+installer:PHASE:Writing files…
+installer:%71.781407
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%72.535371
+installer:PHASE:Writing files…
+installer:%73.289335
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%74.043299
+installer:PHASE:Writing files…
+installer:%75.551227
+installer:PHASE:Writing files…
+installer:%76.305191
+installer:PHASE:Writing files…
+installer:%77.813119
+installer:PHASE:Writing files…
+installer:%78.567083
+installer:PHASE:Writing files…
+installer:%93.126458
+installer:PHASE:Running package scripts…
+installer:%93.470522
+installer:PHASE:Running package scripts…
+installer:%93.797155
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:%94.055032
+installer:PHASE:Writing package receipts…
+installer:PHASE:Validating packages…
+installer:%97.750000
+installer:STATUS:Running installer actions…
+installer:STATUS:
+installer:PHASE:Finishing the Installation…
+installer:STATUS:
+installer:%100.000000
+installer:PHASE:The software was successfully installed.
+installer: The install was successful.
+travis_time:end:0a83e514:start=1550917393108257000,finish=1550917532298330000,duration=139190073000[0Ktravis_fold:end:mono-install[0Ktravis_fold:start:dotnet-install[0K[33;1mInstalling .NET Core[0m
+$ export DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
+$ export DOTNET_CLI_TELEMETRY_OPTOUT=1
+travis_time:start:00c7a622[0K$ wget --retry-connrefused --waitretry=1 -O /tmp/dotnet.pkg https://dotnetcli.azureedge.net/dotnet/Sdk/2.2/dotnet-sdk-2.2-osx-x64.pkg
+--2019-02-23 10:25:32--  https://dotnetcli.azureedge.net/dotnet/Sdk/2.2/dotnet-sdk-2.2-osx-x64.pkg
+Resolving dotnetcli.azureedge.net (dotnetcli.azureedge.net)... 72.21.81.200
+Connecting to dotnetcli.azureedge.net (dotnetcli.azureedge.net)|72.21.81.200|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2019-02-23 10:25:32 ERROR 404: Not Found.
+
+travis_time:end:00c7a622:start=1550917532329362000,finish=1550917532712347000,duration=382985000[0K[31;1mThe command "wget --retry-connrefused --waitretry=1 -O /tmp/dotnet.pkg https://dotnetcli.azureedge.net/dotnet/Sdk/2.2/dotnet-sdk-2.2-osx-x64.pkg" failed and exited with 8 during .[0m
+
+Your build has been stopped.
