@@ -6,12 +6,13 @@ namespace Problems
     {
         static void Main(string[] args)
         {
-             Console.WriteLine(Prefix("hello"));
-              Console.WriteLine(Prefix(""));
-            Console.WriteLine(Prefix("what    ...  did you say?? "));
+            Program p = new Program();
+             Console.WriteLine(p.Prefix("hello"));
+              Console.WriteLine(p.Prefix(""));
+            Console.WriteLine(p.Prefix("what    ...  did you say?? "));
             Console.ReadLine();
         }
-        static string Prefix(string inp)
+        public string Prefix(string inp)
         {
             int strlength = inp.Length;
             int wordscount = 0;
